@@ -1,15 +1,20 @@
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #111111;
+    background-color: #000;
     color: #FFF;
     font-family: 'Roboto', sans-serif;
 }
 
 section {
+    height: 100vh;
+}
+
+.sect-1 {
     background-image: url(./images/logo.jpg);
     background-repeat: no-repeat;
     object-fit: cover;
@@ -17,12 +22,21 @@ section {
     background-position: 0px;
 }
 
+.container-pro {
+    height: 70%;
+    border-top: .5rem solid #444444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    position: fixed;
+    position: absolute;
     width: 95%;
 }
 
